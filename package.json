@@ -18,7 +18,7 @@
     "react-scripts": "^5.0.1",
     "swiper": "^11.2.5",
     "web-vitals": "^2.1.4",
-    "homepage": "https://perazzavera.github.io/SHOP.CO-clone"
+    "homepage": "https://perazzavera.github.io/SHOP.CO"
   },
   "scripts": {
     "start": "react-scripts start",
