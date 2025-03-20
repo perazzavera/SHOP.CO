@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/SHOP.CO/static/css/main.ad0eb3bd.css",
+    "main.js": "/SHOP.CO/static/js/main.cf9a0eed.js",
+    "static/js/453.71083c74.chunk.js": "/SHOP.CO/static/js/453.71083c74.chunk.js",
+    "static/media/banner.svg": "/SHOP.CO/static/media/banner.1b678a7ffd043aad409152823213c860.svg",
+    "static/media/banner-mobile.svg": "/SHOP.CO/static/media/banner-mobile.d38cda84e8f36eeb052b992db92f6b72.svg",
+    "index.html": "/SHOP.CO/index.html",
+    "main.ad0eb3bd.css.map": "/SHOP.CO/static/css/main.ad0eb3bd.css.map",
+    "main.cf9a0eed.js.map": "/SHOP.CO/static/js/main.cf9a0eed.js.map",
+    "453.71083c74.chunk.js.map": "/SHOP.CO/static/js/453.71083c74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad0eb3bd.css",
+    "static/js/main.cf9a0eed.js"
+  ]
+}
