@@ -1,0 +1,28 @@
+body {
+  font-family: var(--fonte-principal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --preto: #000000;
+  --branco: #ffffff;
+  --cinza: #f0eeed;
+  --vermelho: #ff3333;
+  --vermelho-transparencia: hsla(0, 100%, 60%, 0.1);
+  --preto-transparencia: hsla(0, 0%, 0%, 0.6);
+  --cinza-claro: hsla(0, 0%, 0%, 0.1);
+  --cinza-medio: hsla(0, 0%, 0%, 0.4);
+  --fonte-principal: "Satoshi", serif;
+  --fonte-secundaria: "Integral CF Bold", serif;
+}

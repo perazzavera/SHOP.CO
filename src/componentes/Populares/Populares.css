@@ -1,0 +1,120 @@
+.populares {
+  padding: 4rem 6.3rem;
+  text-align: center;
+}
+
+.populares h2 {
+  font-family: var(--fonte-secundaria);
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.populares-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.populares-item {
+  text-align: left;
+}
+
+.produto-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.precos {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.preco-atual,
+.preco-antigo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.preco-antigo {
+  color: var(--cinza-medio);
+  text-decoration: line-through;
+}
+
+.desconto {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--vermelho);
+  background-color: var(--vermelho-transparencia);
+  padding: 0.4rem 0.9rem;
+  border-radius: 3.9rem;
+}
+
+.populares button {
+  background-color: transparent;
+  border: 1px solid var(--preto);
+  padding: 0.9rem 3.5rem;
+  color: var(--preto);
+  border-radius: 3.9rem;
+  margin: 2.25rem 0 4rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.populares button:hover {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+@media (max-width: 768px) {
+  .populares {
+    padding: 0 1rem;
+  }
+
+  .populares h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .populares-container {
+    display: flex;
+    gap: 1.3rem;
+  }
+
+  .populares-item {
+    text-align: left;
+  }
+  .populares-item img {
+    width: 100%;
+  }
+
+  .produto-info h3 {
+    font-size: 1em;
+  }
+  .precos {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+  }
+
+  .preco-atual,
+  .preco-antigo {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .preco-antigo {
+    color: var(--cinza-medio);
+    text-decoration: line-through;
+  }
+
+  .desconto {
+    font-size: 0.63rem;
+  }
+
+  .populares button {
+    width: 100%;
+    border: 1px solid var(--cinza-medio);
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,157 @@
+.apresentacao {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.apresentacao-container {
+  padding: 5rem 5rem 7.3rem 6.3rem;
+  width: 36vw;
+}
+
+.apresentacao-container h1 {
+  font-size: 4em;
+  font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-container p {
+  font-size: 1em;
+  color: var(--preto-transparencia);
+  margin: 2rem 0;
+}
+
+.apresentacao-container button {
+  text-decoration: none;
+  color: var(--branco);
+  background-color: var(--preto);
+  padding: 1rem 3.4rem;
+  border-radius: 3.9rem;
+  border: none;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apresentacao-container button:hover {
+  background-color: var(--preto-transparencia);
+}
+
+.apresentacao-metricas {
+  display: flex;
+  gap: 1rem;
+}
+
+.apresentacao-metricas h3 {
+  font-size: 2.5em;
+}
+
+.apresentacao-metricas p {
+  margin: 0;
+}
+
+.apresentacao-metricas span:nth-child(2) {
+  border-left: 1px solid var(--cinza-claro);
+  border-right: 1px solid var(--cinza-claro);
+  padding: 0 1rem;
+}
+
+.estrela-menor {
+  position: absolute;
+  right: 45%;
+  top: 40%;
+}
+
+.estrela-maior {
+  position: absolute;
+  right: 5%;
+  top: 13%;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .apresentacao {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    z-index: 1;
+  }
+
+  .apresentacao-container {
+    padding: 2.5rem 1rem;
+    background-color: var(--cinza);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .apresentacao-container h1 {
+    font-size: 2.25em;
+  }
+
+  .apresentacao-container p {
+    font-size: 0.87em;
+    margin: 1.25rem 0;
+  }
+
+  .apresentacao-container button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .apresentacao-metricas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 5;
+  }
+
+  .apresentacao-metricas h3 {
+    font-size: 1.5em;
+  }
+
+  .apresentacao-metricas p {
+    margin: 0;
+    font-size: 0.75em;
+  }
+
+  .apresentacao-metricas span:nth-child(2) {
+    border-left: 1px solid var(--cinza-claro);
+    border-right: none;
+    padding: 0 1.5rem;
+  }
+
+  .banner-mobile {
+    display: block;
+    margin-top: -2%;
+    position: relative;
+    width: 100%;
+    z-index: 6;
+  }
+
+  .estrela-menor {
+    position: relative;
+    right: 0;
+    top: 90%;
+    z-index: 10;
+    width: 44px;
+  }
+
+  .estrela-maior {
+    position: relative;
+    left: 65%;
+    top: 70%;
+    z-index: 10;
+    width: 76px;
+  }
+}

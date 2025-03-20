@@ -1,0 +1,105 @@
+.depoimentos {
+  margin: 5rem 6.3rem;
+}
+
+.depoimentos-titulo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.depoimentos h2 {
+  font-family: var(--fonte-secundaria);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.depoimentos-btn {
+  display: flex;
+  right: 3%;
+  top: 20%;
+  gap: 1rem;
+}
+
+.depoimentos-container {
+  display: flex;
+  gap: 1rem; /* Espaço entre os slides */
+  transition: transform 0.5s ease; /* Transição suave */
+}
+
+.depoimentos-item {
+  flex: 0 0 21rem; /* Largura fixa de cada slide */
+  padding: 1.75rem 2rem;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 1.25rem;
+  transition: filter 0.5s ease; /* Transição suave ao borrão */
+}
+
+.depoimentos-item.blur {
+  filter: blur(4px); /* Aplica o efeito de borrão */
+}
+
+.item-descricao {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-descricao h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.depoimentos-item p {
+  font-size: 1rem;
+  color: var(--preto-transparencia);
+}
+
+.botao-transparente {
+  opacity: 0.5; /* Transparência nos botões */
+  pointer-events: none; /* Impede cliques */
+}
+
+@media (max-width: 768px) {
+  .depoimentos {
+    margin: 3.2rem 1rem;
+  }
+
+  .depoimentos-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .depoimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .depoimentos-btn {
+    display: flex;
+    right: 3%;
+    top: 20%;
+    gap: 1rem;
+  }
+
+  .item-descricao h3 {
+    font-size: 1em;
+    padding: 0.5rem 0;
+  }
+
+  .depoimentos-item p {
+    font-size: 0.9em;
+  }
+
+  .depoimentos-container {
+    display: flex;
+    gap: 1rem; /* Espaço entre os slides */
+    transition: transform 0.5s ease; /* Transição suave */
+  }
+
+  .depoimentos-item {
+    flex: 0 0 19.1rem; /* Largura fixa de cada slide */
+    padding: 1.5rem;
+  }
+}

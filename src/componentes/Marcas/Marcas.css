@@ -1,0 +1,30 @@
+.marcas {
+  background-color: var(--preto);
+  width: 100%;
+  overflow: hidden;
+  padding: 2.5rem 2rem;
+  white-space: nowrap;
+  position: static;
+}
+
+.ticker-list {
+  display: flex;
+  gap: 7rem;
+  min-width: 100%;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .marcas {
+    top: 143%;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .ticker-list {
+    display: flex;
+    gap: 7rem;
+    min-width: 100%;
+    will-change: transform;
+  }
+}

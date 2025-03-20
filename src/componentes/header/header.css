@@ -1,0 +1,199 @@
+/* Estilos gerais */
+.header-entrar {
+  background-color: var(--preto);
+  display: flex;
+  justify-content: center;
+  color: var(--branco);
+  font-size: 0.9em;
+  padding: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+.header-entrar a {
+  color: var(--branco);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 6.3rem;
+  justify-content: space-between;
+}
+
+.header-container h2 {
+  font-family: var(--fonte-secundaria);
+  font-size: 2em;
+  margin-right: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.header-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: var(--preto);
+  font-size: 1em;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.header-links a:hover {
+  opacity: 0.5;
+}
+
+.header-container input {
+  background-color: var(--cinza);
+  border: none;
+  border-radius: 3.9rem;
+  padding: 0.9rem;
+  margin: 0 2.5rem;
+  width: 30rem;
+  position: relative;
+}
+
+.header-container input::placeholder {
+  font-family: var(--fonte-principal);
+  font-size: 1em;
+  padding-left: 2.5em;
+}
+
+.header-icons {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.header-icons a {
+  color: var(--preto);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.header-icons a:hover {
+  opacity: 0.5;
+}
+
+.lupa {
+  position: absolute;
+  right: 47%;
+  z-index: 3;
+}
+
+.menu-hamburguer {
+  display: none;
+}
+
+.lupa-mobile {
+  display: none;
+}
+
+.menu-lista {
+  display: none;
+}
+
+/* Estilos específicos para o mobile */
+@media (max-width: 768px) {
+  .header-entrar {
+    font-size: 0.75em;
+    padding: 0.6rem 0;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menu-hamburguer {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-lista {
+    display: block;
+    position: fixed;
+    top: -100%; /* Começa fora da tela */
+    left: 0;
+    width: 100%; /* Largura total */
+    background-color: var(--branco);
+    z-index: 103; /* Acima do overlay */
+    transition: top 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+  .menu-lista.aberto {
+    top: 0; /* Desce até o topo da tela */
+  }
+
+  .menu-lista.fechado {
+    top: -100%; /* Volta para fora da tela */
+  }
+
+  .menu-lista li {
+    list-style: none;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .menu-lista li a {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 1.5rem;
+  }
+
+  .header-container {
+    padding: 1.1rem 1rem;
+  }
+
+  .header-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.7rem;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header-container input {
+    display: none;
+  }
+
+  .header-icons {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .lupa {
+    display: none;
+  }
+
+  .lupa-mobile {
+    display: block;
+  }
+
+  /* Overlay para cobrir o conteúdo e aplicar blur */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Camada transparente */
+    z-index: 102; /* Abaixo do menu */
+    display: none;
+    backdrop-filter: blur(5px); /* Aplica o blur ao fundo */
+  }
+
+  .overlay.ativo {
+    display: block;
+  }
+}
